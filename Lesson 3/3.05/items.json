@@ -1,0 +1,22 @@
+{
+  "items": [
+    {
+      "item ID": "itemCowbell",
+      "Description": "Remember the famous \"more cowbell\" skit from Saturday Night Live? Well this is the actual cowbell.",
+      "Price": 299.99,
+      "URLs": [
+        "http://www.nbc.com/Saturday_Night_Live/",
+        "http://en.wikipedia.org/wiki/More_cowbell"
+      ]
+    },
+    {
+      "item ID": "itemCowbell",
+      "Description": "Remember the famous \"more cowbell\" skit from Saturday Night Live? Well this is the actual cowbell.",
+      "Price": 299.99,
+      "URLs": [
+        "http://www.nbc.com/Saturday_Night_Live/",
+        "http://en.wikipedia.org/wiki/More_cowbell"
+      ]
+    }
+  ]
+}

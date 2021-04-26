@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.02 - 22/02-2021</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #3d3d3d;
+      color: #fff;
+      font-family: 'Roboto Condensed', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <p>When was this webpage created? Check page's title for the answer.</p>
+  <p>Week of the day: <span id="weekOfDay"></span></p>
+  <p>Today's date: <span id="todaysDate"></span></p>
+  <p>Current time: <span id="currTime"></span></p>
+  <p>Page was born 01/03-2021, which means the page is now <span id="daysOld">x</span> days old</p>
+
+  <script>
+    let date = new Date();
+
+    let weekday = new Array(7);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[4] = "Thursday";
+    weekday[5] = "Friday";
+    weekday[6] = "Saturday";
+
+    document.getElementById('weekOfDay').innerHTML = weekday[date.getDay()];
+    document.getElementById('todaysDate').innerHTML = date.toLocaleDateString();
+    document.title = '2.02 - ' + date.toLocaleDateString();
+    document.getElementById('daysOld').innerHTML = Math.round((date - new Date("03/01/2021")) / (1000 * 3600 * 24));
+    
+    function updateTime() {
+      document.getElementById('currTime').innerHTML = new Date().toLocaleTimeString();
+      setTimeout(updateTime, 1000);
+    }
+
+    updateTime();
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background: #222;
+  color: #F2f2f2;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 40px 0;
+  position: relative;
+  min-height: 100vh;
+  margin: 0;
+}
+
+main {
+  position: relative;
+  margin: 16px 0 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+h1 {
+  font-size: 32px;
+  line-height: 34px;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+
+.responsive-iframe-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.toTopBtn {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+}
+
+.singleMovie {
+  max-width: 280px;
+  margin: 16px;
+}
+
+.movieFig {
+  margin: 0;
+}
+
+.movieImg {
+  /* This will upscale images if they're not 280x449 as specified by our design */
+  max-width: 100%;
+  max-height: 450px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.movieCaption {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.movieTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.movieDetails {
+  margin: 0;
+}
+
+.btn {
+  position: relative;
+  cursor: pointer;
+}
+
+.btnRed {
+  background-color: #EB5757;
+  border: 2px solid #F2f2f2;
+}
+
+.btnBlue {
+  background-color: blue;
+  border: 2px solid #F2f2f2;
+}
+
+.btnRound {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.btnIcon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.movieModal {
+  position: fixed;
+  max-width: calc(100vw - 32px);
+  background-color: #333;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  transition: 0s;
+}
+
+body.modalOpen {
+  overflow: hidden;
+}
+
+body.modalOpen::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+
+body.modalOpen .movieModal {
+  opacity: 1;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  z-index: 100;
+  /* transition: all 0.1s; */
+}
+
+.movieModalHeader {
+  display: flex;
+}
+
+.movieModalTitle {
+  max-width: calc(100% - 96px);
+  text-align: center;
+  flex-grow: 1;
+  margin: 0 auto 0 40px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.movieModalFig {
+  margin: 16px 0 8px;
+}
+
+.movieDetailsList {
+  /* Not necessary */
+  /* display: flex;
+  flex-direction: column; */
+  list-style: none;
+  padding: 0;
+}
+
+.movieDetailsListItem {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.movieDetailsListItem:last-of-type {
+  flex-direction: column;
+}
+
+.movieDetailsListItem:last-of-type>.movieModalDetailsTitle {
+  margin-bottom: 8px;
+}
+
+.movieModalDetailsTitle {
+  font-weight: bold;
+  margin: 0 4px 0 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.movieModalDetailsText {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* Tablet and above */
+@media (min-width: 688px) {
+  body {
+    padding: 56px 40px;
+  }
+
+  /* Bit of a hack to allow the articles to scale correctly with spacing */
+  main {
+    margin: 16px -32px 0;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  .movieModal {
+    max-width: 600px;
+  }
+}

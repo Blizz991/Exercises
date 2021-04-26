@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.03 - Guessing game</title>
+</head>
+
+<body>
+  <input type="number" name="userInput" id="userInput">
+  <input type="submit" onclick="checkNumber()" value="Guess number">
+  <p id="messageOutput"></p>
+  <script>
+    var randomNumber = Math.floor(Math.random() * Math.floor(10));
+    let messageOutputTag = document.getElementById("messageOutput");
+    var userNumber;
+
+    function checkNumber() {
+      try {
+        userNumber = parseInt(document.getElementById('userInput').value);
+
+        if (randomNumber === userNumber) {
+          messageOutputTag.innerHTML = "You won!";
+        } else {
+          messageOutputTag.innerHTML = "Wrong number - the number was: " + randomNumber;
+        }
+
+        //Set new random number
+        randomNumber = Math.floor(Math.random() * Math.floor(10));
+      } catch (error) {
+        console.log("Something went wrong");
+        messageOutputTag.innerHTML = "Something went wrong, try again";
+      }
+    }
+
+  </script>
+</body>
+
+</html>

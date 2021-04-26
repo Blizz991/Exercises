@@ -1,0 +1,52 @@
+{
+  "movies": [
+    {
+      "title": "The Imitation Game",
+      "youtubeId": "j2jRs4EAvWM",
+      "releaseDate": "August 29, 2014",
+      "budget": "$14 million",
+      "boxOffice": "$233.6 million",
+      "description": "Based on the real life story of legendary cryptanalyst Alan Turing, the film portrays the nail-biting race against time by Turing and his brilliant team of code-breakers at Britain's top-secret Government Code and Cypher School at Bletchley Park, during the darkest days of World War II."
+    },
+    {
+      "title": "The Prestige",
+      "youtubeId": "ObGVA1WOqyE",
+      "releaseDate": "October 17, 2006",
+      "budget": "$40 million",
+      "boxOffice": "$109.7 million",
+      "description": "The Prestige is a 2006 psychological thriller film directed by Christopher Nolan, written by Nolan and his brother Jonathan, based on the 1995 novel of the same name by Christopher Priest. It follows Robert Angier and Alfred Borden, rival stage magicians in London at the end of the 19th century."
+    },
+    {
+      "title": "The Fellowship of the Ring",
+      "youtubeId": "V75dMMIW2B4",
+      "releaseDate": "19. december 2001",
+      "budget": "93 millioner USD",
+      "boxOffice": "888,3 millioner USD",
+      "description": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron."
+    },
+    {
+      "title": "The Two Towers",
+      "youtubeId": "LbfMDwc4azU",
+      "releaseDate": "15. december 2002",
+      "budget": "$94 million",
+      "boxOffice": "$951,2 million",
+      "description": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard."
+    },
+    {
+      "title": "What Happened to Monday",
+      "youtubeId": "hOiWSWLt-NA",
+      "releaseDate": "August 30, 2017 ",
+      "budget": "20 million USD",
+      "boxOffice": "28 million USD",
+      "description": "In a world where families are allowed only one child due to overpopulation, resourceful identical septuplets must avoid governmental execution and dangerous infighting while investigating the disappearance of one of their own."
+    },
+    {
+      "title": "Ready Player One",
+      "youtubeId": "cSp1dM2Vj48",
+      "releaseDate": "March 29, 2018 ",
+      "budget": "$155–175 million USD",
+      "boxOffice": "582.9 million USD",
+      "description": "James Halliday designs a virtual reality and hides the keys to his fortune in it for a worthy player to find after his death. Wade, a teenager, sets out on a quest to find the keys and the fortune."
+    }
+  ]
+}

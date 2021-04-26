@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Items>
+   <Item>
+      <ItemId>
+         itemCowbell
+      </ItemId>
+      <Description>
+         Remember the famous "more cowbell" skit from Saturday Night Live? Well this is the actual cowbell.
+      </Description>
+      <Price>
+         299.99
+      </Price>
+      <URLs>
+         <URL>
+            http://www.nbc.com/Saturday_Night_Live/
+         </URL>
+         <URL>
+            http://en.wikipedia.org/wiki/More_cowbell
+         </URL>
+      </URLs>
+   </Item>
+</Items>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web calculator</title>
+</head>
+
+<body>
+  <input id="txtResult" type="text" readonly="readonly"><br>
+  <input id="txtInput" type="text"><br>
+  <button id="btn7" onclick="AddText(7)">7</button>
+  <button id="btn8" onclick="AddText(8)">8</button>
+  <button id="btn9" onclick="AddText(9)">9</button><br>
+  <button id="btn4" onclick="AddText(4)">4</button>
+  <button id="btn5" onclick="AddText(5)">5</button>
+  <button id="btn6" onclick="AddText(6)">6</button><br>
+  <button id="btn1" onclick="AddText(1)">1</button>
+  <button id="btn2" onclick="AddText(2)">2</button>
+  <button id="btn3" onclick="AddText(3)">3</button><br>
+  <button id="btnClear" onclick="ClearLast()">C</button>
+  <button id="btn0" onclick="AddText(0)">0</button>
+  <button id="btnClearEntry" onclick="ClearAll()">CE</button><br>
+  <button id="btnPlus" onclick="AddText('+')">+</button>
+  <button id="btnMinus" onclick="AddText('-')">-</button>
+  <button id="btnMinus" onclick="AddText('/')">/</button>
+  <button id="btnMinus" onclick="AddText('*')">*</button>
+  <button id="btnEquals" onclick='ExecuteCalculation()'>=</button>
+  <script src="calculator.js"></script>
+</body>
+
+</html>
+

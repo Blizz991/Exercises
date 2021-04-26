@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2.04 - String Work</title>
+</head>
+<body>
+  <input type="text" name="userInput" id="userInput">
+  <input type="submit" onclick="morphText()" value="Morph my input">
+  <p id="messageOutput"></p>
+  <script>
+    var userInput = document.getElementById('userInput').value;
+    let messageOutputTag = document.getElementById("messageOutput");
+
+    function morphText() {
+      let firstLetter = userInput.slice(0, 1);
+
+      //Brute force
+      messageOutputTag.innerHTML = firstLetter + userInput + firstLetter;
+    }
+
+  </script>
+</body>
+</html>
