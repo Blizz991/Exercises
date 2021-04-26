@@ -15,7 +15,7 @@
       <h1>Movies</h1>
     </header>
     <main id="movieContainer">
-      <a href="#top" class="btnRed btnRound toTopBtn">
+      <a aria-label="Go to top button" href="#top" class="btnRed btnRound toTopBtn">
         <svg class="btnIcon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M12 19V5" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M5 12L12 5L19 12" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -27,7 +27,7 @@
     <section class="movieModalContent">
       <header class="movieModalHeader">
         <h2 id="modalTitle" class="movieModalTitle"></h2>
-        <button onclick="toggleModal();" class="btn btnRed btnRound">
+        <button onclick="toggleModal();" aria-label="Close modal button" tabindex="-1" class="btn btnRed btnRound">
           <svg class="btnIcon" width="18" height="18" viewBox="0 0 18 18" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M13.5 4.5L4.5 13.5" stroke="#F2F2F2" stroke-width="2" stroke-linecap="round"
