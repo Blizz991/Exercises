@@ -1,5 +1,7 @@
 // Setting this variable globally so we can access it to push movie details to the modal
 let movies;
+//For aria purposes
+let modalHiddenState = true;
 const apiKey = 'e61d762e';
 const apiUrl = 'https://www.omdbapi.com/'
 
@@ -11,7 +13,10 @@ getDataFromLocalJson('assets/data/movies.json', appendMoviesToDOM);
 function toggleModal() {
   $('body').classList.toggle('modalOpen');
   //Force video to stop playing when modal is closed - we could do this in a nicer way if we used the youtube API.
-  $('modalTrailer').setAttribute('src', '')
+  $('modalTrailer').setAttribute('src', '');
+  //Inverse modalHiddenState
+  modalHiddenState = !modalHiddenState;
+  $('modalTrailer').setAttribute('aria-hidden', modalHiddenState);
 }
 
 //Get data from our local json
