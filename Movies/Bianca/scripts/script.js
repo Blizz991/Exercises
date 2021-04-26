@@ -1,4 +1,4 @@
-const APIKEY = 'http://www.omdbapi.com/?apikey=417c0225&';
+const APIKEY = 'https://www.omdbapi.com/?apikey=417c0225&';
 
 var movies =["tt1536537","tt1677720","tt0482571","tt0120737","tt0167261", "tt2084970"];
 // var mvTitles = ["The Imitation Game",
