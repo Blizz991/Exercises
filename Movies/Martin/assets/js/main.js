@@ -8,7 +8,6 @@ const apiUrl = 'https://www.omdbapi.com/'
 getDataFromLocalJson('assets/data/movies.json', appendMoviesToDOM);
 
 //TODO?: Close modal when clicking outside of it (i.e. make it dismissible) - outside of scope for this assignment.
-
 function toggleModal() {
   $('body').classList.toggle('modalOpen');
   //Force video to stop playing when modal is closed - we could do this in a nicer way if we used the youtube API.
@@ -23,6 +22,7 @@ function getDataFromLocalJson(url, callback) {
     .then(() => callback(movies))
 }
 
+//Get data from API => then populate modal with the data.
 function getMovieInfoFromAPI(url, youtubeId) {
   fetch(url)
     .then(res => res.json())
@@ -64,7 +64,8 @@ function populateModalData(youtubeId, movie) {
 }
 
 
-// moment.js would honestly have been prettier at this point, or just using the timeago plugin for jquery
+// moment.js would honestly have been prettier at this point, sadly it's no longer being updated
+// timeago plugin for jquery is another fairly lightweight option.
 function time_ago(time) {
   switch (typeof time) {
     case 'number':
